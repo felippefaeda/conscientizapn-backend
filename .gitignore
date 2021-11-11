@@ -11,5 +11,8 @@ web-build/
 *.sqlite
 .env
 
+temp/uploads/*
+!temp/uploads/.gitkeep
+
 # macOS
 .DS_Store
