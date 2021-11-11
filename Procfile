@@ -1,1 +1,0 @@
-mobile: npm run start
