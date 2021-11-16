@@ -1,8 +1,11 @@
 {
     "name": "conscientiza_pn_server",
     "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
+    "description": "Conscientiza PN - Uma plataforma de apoio e fiscalização ao descarte de resíduos sólidos para a cidade de Ponte Nova",
+    "engines": {
+        "node": "14.17.6"
+    },
+    "main": "src/server.js",
     "scripts": {
         "dev": "ts-node-dev --ignore-watch node_modules src/server.ts",
         "start": "ts-node src/server.ts",
@@ -12,7 +15,12 @@
         "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "keywords": [],
+    "keywords": [
+        "node",
+        "ts-node",
+        "heroku",
+        "express"
+    ],
     "author": "",
     "license": "ISC",
     "dependencies": {
@@ -26,9 +34,7 @@
         "morgan": "^1.10.0",
         "multer": "^1.4.3",
         "multer-s3": "^2.10.0",
-        "sqlite3": "^5.0.2",
-        "ts-node": "^10.0.0",
-        "typescript": "^4.3.2"
+        "sqlite3": "^5.0.2"
     },
     "devDependencies": {
         "@types/cors": "^2.8.10",
